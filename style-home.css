@@ -1,0 +1,104 @@
+body{
+background: url(planodefundo.jpg);
+background-size: cover;
+font-family: 'VT323', monospace;
+
+}
+
+.titulo-jogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-principal{
+    color: white;
+    font-size: 80px;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    text-shadow: black  10px 10px 10px;
+}
+
+
+.pergunta{
+    margin: 8%;
+    color: white;
+    font-size: 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personagens{
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 0;
+    align-items: center;
+}
+
+
+
+.personagens li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+.personagens li:hover{
+    border-color: #FF8C00;
+    transition: 1s;
+}
+
+.link{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.imagens{
+    max-height: 200px;
+}
+
+
+
+footer{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(#f00 ,#FF8C00);
+    filter: grayscale(30%);
+}
+
+@media screen and (max-width: 480px) {
+.titulo-principal, .principal, .pergunta{
+    width: auto;
+    text-align: center;
+}
+
+.personagens, .personagensli{
+    position: static;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imagens{
+    max-height: 100px;
+    display: flex;
+    align-items:flex-end;   
+}
+
+footer{
+    width: 100%;
+    padding: 35px;
+}
+}
